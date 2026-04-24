@@ -495,9 +495,9 @@ section + section { margin-top: 5rem; }
   display: grid;
   grid-template-columns: minmax(260px, 1.3fr) 1fr 1fr;
   gap: var(--space-5);
-  align-items: center;
+  align-items: start;
 }
-@media (max-width: 820px) { .footer-grid { grid-template-columns: 1fr; gap: var(--space-3); align-items: start; } }
+@media (max-width: 820px) { .footer-grid { grid-template-columns: 1fr; gap: var(--space-3); } }
 
 .footer-brand { display: flex; align-items: center; }
 .footer-brand .footer-logo {
