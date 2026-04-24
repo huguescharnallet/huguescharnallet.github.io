@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mentions légales &amp; contact — Les Amis de Hugues Charnallet</title>
   <meta name="description" content="Mentions légales et coordonnées de l'association Les Amis de Hugues Charnallet.">
-  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  <link rel="icon" type="image/png" href="assets/images/logo-mark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400..700&display=swap">
@@ -18,7 +18,7 @@
 <header class="site-header">
   <nav class="nav" aria-label="Navigation principale">
     <a class="brand" href="index.html">
-      <img src="assets/images/logo.jpg" alt="" aria-hidden="true">
+      <img src="assets/images/logo-mark.png" alt="" aria-hidden="true">
       <span class="brand-text">
         <span class="brand-name">Les Amis de Hugues Charnallet</span>
         <span class="brand-tagline">
@@ -64,17 +64,24 @@
       <span data-lang="fr">Coordonnées</span>
       <span data-lang="en">Contact details</span>
     </h2>
-    <p>
+    <p class="lead">
       <strong>Les Amis de Hugues Charnallet</strong><br>
-      6 rue du Jour<br>
-      75001 Paris, France<br>
+      6 rue du Jour — 75001 Paris, France<br>
       <a href="mailto:contact@huguescharnallet.org">contact@huguescharnallet.org</a>
     </p>
+  </section>
 
-    <h2>
+  <section class="container container--narrow legal-details">
+    <div class="divider"></div>
+    <p class="eyebrow">
+      <span data-lang="fr">Informations légales</span>
+      <span data-lang="en">Legal information</span>
+    </p>
+
+    <h3>
       <span data-lang="fr">Identité de l'association</span>
       <span data-lang="en">Legal identity</span>
-    </h2>
+    </h3>
     <div data-lang="fr">
       <p>
         <strong>Dénomination&nbsp;:</strong> Les Amis de Hugues Charnallet.<br>
@@ -98,19 +105,19 @@
       </p>
     </div>
 
-    <h2>
+    <h3>
       <span data-lang="fr">Direction de la publication</span>
       <span data-lang="en">Publication director</span>
-    </h2>
+    </h3>
     <p>
       <span data-lang="fr">Directrice de la publication&nbsp;: Brigitte Maccioni Charnallet, Présidente.</span>
       <span data-lang="en">Publication director: Brigitte Maccioni Charnallet, President.</span>
     </p>
 
-    <h2>
+    <h3>
       <span data-lang="fr">Hébergement</span>
       <span data-lang="en">Hosting</span>
-    </h2>
+    </h3>
     <div data-lang="fr">
       <p>Ce site est hébergé par <strong>GitHub, Inc.</strong> — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis — via le service GitHub&nbsp;Pages. Nom de domaine géré par <strong>Squarespace Domains II LLC</strong>.</p>
     </div>
@@ -118,10 +125,10 @@
       <p>This website is hosted by <strong>GitHub, Inc.</strong> — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA — through the GitHub Pages service. Domain name managed by <strong>Squarespace Domains II LLC</strong>.</p>
     </div>
 
-    <h2>
+    <h3>
       <span data-lang="fr">Propriété intellectuelle</span>
       <span data-lang="en">Intellectual property</span>
-    </h2>
+    </h3>
     <div data-lang="fr">
       <p>Le contenu de ce site (textes, images, logo, charte graphique) est la propriété de l'association Les Amis de Hugues Charnallet, sauf mention contraire. Toute reproduction intégrale ou partielle, par quelque moyen que ce soit, est soumise à autorisation préalable.</p>
       <p>Les photographies des enfants bénéficiaires sont publiées avec l'accord des familles et de nos partenaires hospitaliers.</p>
@@ -131,10 +138,10 @@
       <p>Photographs of beneficiary children are published with the consent of their families and our hospital partners.</p>
     </div>
 
-    <h2>
+    <h3>
       <span data-lang="fr">Données personnelles</span>
       <span data-lang="en">Personal data</span>
-    </h2>
+    </h3>
     <div data-lang="fr">
       <p>Ce site n'utilise pas de cookies de suivi et ne collecte pas de données personnelles. Les dons sont traités par notre partenaire de paiement <strong>HelloAsso</strong>, qui applique sa propre politique de protection des données.</p>
       <p>Conformément au Règlement général sur la protection des données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour l'exercer, écrivez à <a href="mailto:contact@huguescharnallet.org">contact@huguescharnallet.org</a>.</p>
@@ -149,12 +156,8 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div>
-        <h4>Les Amis de Hugues Charnallet</h4>
-        <p class="muted">
-          <span data-lang="fr">Association loi 1901 déclarée à la préfecture de police de Paris le 28 janvier 2022 (JO du 8 février 2022, annonce n° 1504).</span>
-          <span data-lang="en">Non-profit association under the French law of 1901, registered at the Paris Prefecture on 28 January 2022 (JO of 8 February 2022, notice n° 1504).</span>
-        </p>
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/images/logo-complet.png" alt="Association Les Amis de Hugues Charnallet — Ensemble face à la drépanocytose">
       </div>
       <div>
         <h4><span data-lang="fr">Navigation</span><span data-lang="en">Navigation</span></h4>
@@ -175,7 +178,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Les Amis de Hugues Charnallet</span>
+      <span>© <span data-year>2026</span> Les Amis de Hugues Charnallet<span data-lang="fr">, association loi 1901</span><span data-lang="en">, French non-profit (loi 1901)</span></span>
       <span><a href="mentions-legales.html"><span data-lang="fr">Mentions légales</span><span data-lang="en">Legal notice</span></a></span>
     </div>
   </div>
