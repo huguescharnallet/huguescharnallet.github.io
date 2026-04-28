@@ -3,3 +3,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Sauvegarde locale des photos avant retouche
+assets/images/beneficiaires-originaux/

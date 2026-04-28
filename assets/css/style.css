@@ -339,7 +339,7 @@ section + section { margin-top: 5rem; }
 .gallery figure {
   margin: 0;
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   background: var(--bg-soft);
 }
@@ -439,6 +439,66 @@ section + section { margin-top: 5rem; }
   font-weight: 500;
   color: var(--ink-muted);
   letter-spacing: 0.02em;
+}
+
+/* --- Photo marquee (homepage) --- */
+.photo-marquee-section {
+  margin-top: var(--space-5);
+  padding: 0;
+}
+.photo-marquee {
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
+}
+.photo-marquee-track {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  animation: photo-marquee-scroll 150s linear infinite;
+}
+.photo-marquee:hover .photo-marquee-track,
+.photo-marquee:focus-within .photo-marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .photo-marquee-track { animation: none; }
+}
+.photo-marquee-item {
+  display: block;
+  flex: 0 0 auto;
+  width: 220px;
+  height: 290px;
+  overflow: hidden;
+  background: var(--bg-soft);
+  border-radius: 2px;
+}
+.photo-marquee-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.3s ease;
+  filter: saturate(0.95);
+}
+.photo-marquee-item:hover img,
+.photo-marquee-item:focus img {
+  transform: scale(1.04);
+  filter: saturate(1.05);
+}
+.photo-marquee-cta {
+  text-align: center;
+  margin: var(--space-3) 0 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+@keyframes photo-marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@media (max-width: 600px) {
+  .photo-marquee-item { width: 160px; height: 210px; }
+  .photo-marquee-track { animation-duration: 100s; }
 }
 
 /* --- Donation page --- */
