@@ -608,7 +608,9 @@ section + section { margin-top: 5rem; }
   color: var(--ink-muted);
   margin-top: auto;
 }
-.center-block { display: block; text-align: center; }
+/* Extra breathing room before the final donation CTA */
+.news-grid + .news-grid,
+section:has(> .news-grid) + section { margin-top: 7.5rem; }
 
 /* --- Footer --- */
 .site-footer {
