@@ -555,10 +555,8 @@ section + section { margin-top: 5rem; }
 
 /* --- Video block --- */
 .video-block {
-  margin: var(--space-3) 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
+  margin: var(--space-3) auto 0;
+  max-width: 560px;
 }
 .video-block video {
   width: 100%;
@@ -567,12 +565,6 @@ section + section { margin-top: 5rem; }
   border-radius: 6px;
   background: #000;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
-}
-.video-block figcaption {
-  font-size: 0.9rem;
-  color: var(--ink-muted);
-  font-style: italic;
-  text-align: center;
 }
 
 /* --- News (homepage press) --- */
